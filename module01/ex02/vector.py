@@ -111,3 +111,20 @@ class Vector:
                 value.append(elem[0])
             return Vector([value])
 
+
+def main():
+    v1 = Vector([[1.0, 2.0, 3.0]])
+    v2 = Vector([[5.0, 9.0, 14.0]])
+
+    v3 = v1.__rsub__(v2)
+    v4 = Vector([[6.0, 8.0, 24.0]]) * 2
+    print(f"2: {v1.value}")
+    print(f"3: {v1.shape}")
+    print(f"4: {v2.value}")
+    print(f"5: {v2.shape}")
+    print(f"6: {v3.value} shape of {v3.shape}")
+    print(f"7: {v4.value} shape of {v4.shape}")
+
+
+if __name__ == "__main__":
+    main()
